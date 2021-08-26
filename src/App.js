@@ -1,38 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components'
 
-const Title = styled.h1``;
-
-const Input = styled.input`
-
-`;
-
 function App() {
-   const [ pct, setPct ] = useState(10);
-   const [ conta, setConta ] = useState(0);
+   const [ contador, setContador ] = useState(0);
+
+   const aumentarContador = () => {
+      setContador( contador + 1)
+   }
+
+   useEffect(() => {
+      if (contador === 0) {
+         document.title = "Inicie o contador ...";
+      } else {
+         document.title = `Contagem: ${contador}`;
+      }
+   }, [ contador ])
 
    return (
       <>
-         <Title>Calculadora de Gorjeta</Title>
-
-         <p>Quanto deu a conta?</p>
-         <Input type="number" value={conta} onChange={(e) => { setConta(e.target.value) }}></Input>
-
-         <p>Qual a porcentagem de gorjeta?</p>
-         <Input type="number" value={pct} onChange={(e) => { setPct(e.target.value) }}></Input>
-
-         <hr />
-
-         { conta > 0 &&
-            <>
-               <p>Sub-total: R$ {conta}</p>
-               <p>Gorjeta ({pct}%): R$ {(parseFloat((pct / 100) * conta)).toFixed(1)}</p>
-               <p>Total: R$ {(parseFloat((pct / 100) * conta) + parseInt(conta)).toFixed(1)}</p>
-            </>
-         }
+         <h1>Contagem Atual: {contador}</h1>
+         <button onClick={aumentarContador}>Aumentar</button>
       </>
    );
-
 }
 
 export default App;
