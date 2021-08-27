@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import SearchBox from './Components/SearchBox';
 
 function App() {
-   const [ contador, setContador ] = useState(0);
+   
+   const [ searchText, setSearchText ] = useState("");
 
-   const aumentarContador = () => {
-      setContador( contador + 1)
+   function handleSearchInput(novoTexto) {
+      setSearchText(novoTexto);
    }
 
-   useEffect(() => {
-      if (contador === 0) {
-         document.title = "Inicie o contador ...";
-      } else {
-         document.title = `Contagem: ${contador}`;
-      }
-   }, [ contador ])
 
    return (
       <>
-         <h1>Contagem Atual: {contador}</h1>
-         <button onClick={aumentarContador}>Aumentar</button>
+         <h1>Lista de Tarefas</h1>
+
+         <SearchBox 
+            frase="Busque aqui..."
+            onChangeText={handleSearchInput}
+         />
+
+         <hr />
+
+         Texto procurado: {searchText}
       </>
    );
 }
