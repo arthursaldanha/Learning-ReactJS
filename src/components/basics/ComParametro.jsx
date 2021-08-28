@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ComParametro(props) {
+const ComParametro = (props) => {
    console.log(props);
 
    const notaInt = Math.ceil(props.nota)
@@ -17,3 +17,5 @@ export default function ComParametro(props) {
       </div>
    );
 }
+
+export default ComParametro;
