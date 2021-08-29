@@ -7,15 +7,11 @@ import Fragmento from "./components/basics/Fragmento.jsx";
 const App = (props) => {
    return (
       <div id="app">
-         <h1>Fragmentos React</h1>
          <Fragmento />
          <ComParametro
-            titulo="Segundo Componente"
-            aluno="Arthur Saldanha"
-            nota={9.3}
-            status="aprovado"
+            min={1}
+            max={20}
          />
-         <Primeiro></Primeiro>
       </div>
    );
 }
