@@ -4,8 +4,8 @@ const Fragmento = () => {
    return (
       // React.Fragment ou <>
       <>
-         <h2>Sorteador de Números</h2>
-         <p>Um número será sorteado</p>
+         <h2>Fragmento</h2>
+         <p>Cuidado com este erro!</p>
       </>
    );
 }
