@@ -3,6 +3,7 @@ import "./App.css"
 
 import Card from "./components/layout/Card.jsx";
 import Familia from "./components/basics/Familia.jsx";
+import FamiliaMembro from "./components/basics/FamiliaMembro.jsx";
 import Primeiro from "./components/basics/Primeiro.jsx";
 import ComParametro from "./components/basics/ComParametro.jsx";
 import Fragmento from "./components/basics/Fragmento.jsx";
@@ -15,7 +16,11 @@ const App = (props) => {
          
          <div className="Cards">
             <Card titulo="#05 - Componente com Filhos" color="#F8D800">
-               <Familia sobrenome="Saldanha"></Familia>
+               <Familia sobrenome="Saldanha">
+                  <FamiliaMembro nome="Arthur" />
+                  <FamiliaMembro nome="Ana" />
+                  <FamiliaMembro nome="Pedro" />
+               </Familia>
             </Card>
             
             <Card titulo="#04 - Desafio Aleatório" color="#08AEEA">
