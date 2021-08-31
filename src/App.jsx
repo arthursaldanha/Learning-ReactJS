@@ -1,7 +1,8 @@
 import React from 'react';
 import "./App.css"
 
-import Card from "./components/layout/Card.jsx"
+import Card from "./components/layout/Card.jsx";
+import Familia from "./components/basics/Familia.jsx";
 import Primeiro from "./components/basics/Primeiro.jsx";
 import ComParametro from "./components/basics/ComParametro.jsx";
 import Fragmento from "./components/basics/Fragmento.jsx";
@@ -13,6 +14,10 @@ const App = (props) => {
          <h1>Fundamentos React</h1>
          
          <div className="Cards">
+            <Card titulo="#05 - Componente com Filhos" color="#F8D800">
+               <Familia sobrenome="Saldanha"></Familia>
+            </Card>
+            
             <Card titulo="#04 - Desafio Aleatório" color="#08AEEA">
                <Aleatorio 
                   min={1}
