@@ -5,7 +5,12 @@
 }
 
 body {
-   background-color: #ccc;
-   color: #000;
+   font-family: "Poppins";
+   background-color: #333;
+   color: #fff;
+   text-align: center;
 }
 
+h1, h2, h3 {
+   font-weight: 400;
+}

@@ -8,7 +8,7 @@ const Aleatorio = (props) => {
    return (
       <div>
          <h3>Um número será sorteado entre {min} e {max}</h3>
-         <p>{sorteado}</p>
+         <p>Número sorteado: {sorteado}</p>
       </div>
    );
 }
