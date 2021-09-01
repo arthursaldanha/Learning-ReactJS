@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css"
 
 import Card from "./components/layout/Card.jsx";
+import DiretaPai from "./components/comunicacao/DiretaPai.jsx"
 import UsuarioInfo from "./components/condicional/UsuarioInfo.jsx";
 import ParOuImpar from "./components/condicional/ParOuImpar.jsx";
 import TabelaProdutos from "./components/repeticao/Produtos";
@@ -19,6 +20,10 @@ const App = (props) => {
          <h1>Fundamentos React</h1>
          
          <div className="Cards">
+            <Card titulo="#09 - Comunicação Direta" color="#FD6E6A">
+               <DiretaPai />
+            </Card>
+            
             <Card titulo="#08 - Renderização Condicional" color="#FD6E6A">
                <ParOuImpar numero={19} />
                <UsuarioInfo  usuario={{ nome: "Arthur" }}/>
