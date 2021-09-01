@@ -2,7 +2,8 @@ import React from 'react';
 import "./App.css"
 
 import Card from "./components/layout/Card.jsx";
-import ParOuImpar from "./components/condicional/ParOuImpar.jsx"
+import UsuarioInfo from "./components/condicional/UsuarioInfo.jsx";
+import ParOuImpar from "./components/condicional/ParOuImpar.jsx";
 import TabelaProdutos from "./components/repeticao/Produtos";
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import Familia from "./components/basics/Familia.jsx";
@@ -19,15 +20,16 @@ const App = (props) => {
          
          <div className="Cards">
             <Card titulo="#08 - Renderização Condicional" color="#FD6E6A">
-               <ParOuImpar numero={19}></ParOuImpar>
+               <ParOuImpar numero={19} />
+               <UsuarioInfo  usuario={{ nome: "Arthur" }}/>
             </Card>
             
             <Card titulo="#07 - Desafio de Repetição" color="#8EC5FC">
-               <TabelaProdutos></TabelaProdutos>
+               <TabelaProdutos />
             </Card>
             
             <Card titulo="#06 - Repetição" color="#CA26FF">
-               <ListaAlunos></ListaAlunos>
+               <ListaAlunos />
             </Card>
             
             <Card titulo="#05 - Componente com Filhos" color="#F8D800">
