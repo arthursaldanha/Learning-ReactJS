@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css"
 
 import Card from "./components/layout/Card.jsx";
+import TabelaProdutos from "./components/repeticao/Produtos";
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import Familia from "./components/basics/Familia.jsx";
 import FamiliaMembro from "./components/basics/FamiliaMembro.jsx";
@@ -16,6 +17,10 @@ const App = (props) => {
          <h1>Fundamentos React</h1>
          
          <div className="Cards">
+            <Card titulo="#07 - Desafio de Repetição" color="#8EC5FC">
+               <TabelaProdutos></TabelaProdutos>
+            </Card>
+            
             <Card titulo="#06 - Repetição" color="#CA26FF">
                <ListaAlunos></ListaAlunos>
             </Card>
