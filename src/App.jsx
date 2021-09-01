@@ -17,7 +17,7 @@ const App = (props) => {
          
          <div className="Cards">
             <Card titulo="#06 - Repetição" color="#CA26FF">
-               <ListaAlunos />
+               <ListaAlunos></ListaAlunos>
             </Card>
             
             <Card titulo="#05 - Componente com Filhos" color="#F8D800">
