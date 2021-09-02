@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css"
 
 import Card from "./components/layout/Card.jsx";
+import Input from "./components/formulario/Input.jsx"
 import IndiretaPai from "./components/comunicacao/IndiretaPai.jsx"
 import DiretaPai from "./components/comunicacao/DiretaPai.jsx"
 import UsuarioInfo from "./components/condicional/UsuarioInfo.jsx";
@@ -21,6 +22,10 @@ const App = (props) => {
          <h1>Fundamentos React</h1>
          
          <div className="Cards">
+            <Card titulo="#11 - Controlando Componentes (Input)" color="#3CD500">
+               <Input />
+            </Card>
+
             <Card titulo="#10 - Comunicação Indireta" color="#3813C2">
                <IndiretaPai />
             </Card>
