@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css"
 
 import Card from "./components/layout/Card.jsx";
+import IndiretaPai from "./components/comunicacao/IndiretaPai.jsx"
 import DiretaPai from "./components/comunicacao/DiretaPai.jsx"
 import UsuarioInfo from "./components/condicional/UsuarioInfo.jsx";
 import ParOuImpar from "./components/condicional/ParOuImpar.jsx";
@@ -20,7 +21,11 @@ const App = (props) => {
          <h1>Fundamentos React</h1>
          
          <div className="Cards">
-            <Card titulo="#09 - Comunicação Direta" color="#FD6E6A">
+            <Card titulo="#10 - Comunicação Indireta" color="#3813C2">
+               <IndiretaPai />
+            </Card>
+            
+            <Card titulo="#09 - Comunicação Direta" color="#32CCBC">
                <DiretaPai />
             </Card>
             
