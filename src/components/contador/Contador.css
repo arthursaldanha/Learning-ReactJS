@@ -1,0 +1,24 @@
+h1, h2, h3 {
+   margin: 0.3rem;
+}
+
+.Contador label {
+   font-size: 1.7rem;
+}
+
+.Contador input {
+   font-size: 1.4rem;
+   height: 30px;
+   width: 60px;
+}
+
+.Contador button {
+   margin: 15px;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   background-color: #1499d3;
+   color: #fff;
+   font-size: 1.4rem;
+   cursor: pointer;
+}
