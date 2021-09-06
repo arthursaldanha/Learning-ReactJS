@@ -1,3 +1,10 @@
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
 .Mega h2 {
    font-size: 2.8rem;
 }
@@ -5,19 +12,39 @@
 .Mega h3 {
    font-size: 2rem;
    font-weight: 600;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
 }
 
-.input {
+.Bolas {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   margin: 0 7px 7px 0;
+   background-color: #27d8c6;
+}
+
+.Bolas span {
+   align-self: center;
+   justify-self: center;
+}
+
+.inputs {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-.input label {
+.inputs label {
    font-size: 1.6rem;
 }
 
-.input input {
+.inputs input {
    border: none;
    margin-top: 5px;
 

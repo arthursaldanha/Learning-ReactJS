@@ -25,7 +25,7 @@ const App = (props) => {
          <h1>Fundamentos React</h1>
          
          <div className="Cards">
-            <Card titulo="#13 - Desafio da Mega Sena" color="#90F7EC">
+            <Card titulo="#13 - Desafio da Mega Sena" color="#27d8c6">
                <Mega qtde={6}/>
             </Card>
             

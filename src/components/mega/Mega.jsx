@@ -28,13 +28,21 @@ const Mega = (props) => {
    const numerosIniciais = gerarNumeros(qtde)
    const [numeros, setNumeros] = useState(numerosIniciais)
 
-   console.log(numeros);
+   function bolas() {
+      return (
+         numeros.map((element, index) => {
+            return (
+               <span className="Bolas" key={index}><span>{element}</span></span>
+            );
+         })
+      );
+   }
 
    return (
       <div className="Mega">
          <h2>Mega Sena</h2>
-         <h3>{numeros.join(" - ")}</h3>
-         <div className="input">
+         <h3>{bolas()}</h3>
+         <div className="inputs">
             <label>Quantidade de Números:</label>
             <input 
                type="number" 
