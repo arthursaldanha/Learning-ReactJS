@@ -1,0 +1,40 @@
+.Mega h2 {
+   font-size: 2.8rem;
+}
+
+.Mega h3 {
+   font-size: 2rem;
+   font-weight: 600;
+}
+
+.input {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.input label {
+   font-size: 1.6rem;
+}
+
+.input input {
+   border: none;
+   margin-top: 5px;
+
+   height: 25px;
+   width: 50px;
+
+   font-size: 1.6rem;
+}
+
+.Mega button {
+   padding: 7px;
+   border-radius: 7px;
+   margin-top: 10px;
+
+   background-color: #27d8c6;
+   color: #fff;
+   
+   font-size: 1.8rem;
+   cursor: pointer;
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import "./App.css"
 
 import Card from "./components/layout/Card.jsx";
+
+import Mega from "./components/mega/Mega.jsx"
 import Contador from "./components/contador/Contador.jsx"
 import Input from "./components/formulario/Input.jsx"
 import IndiretaPai from "./components/comunicacao/IndiretaPai.jsx"
@@ -23,7 +25,11 @@ const App = (props) => {
          <h1>Fundamentos React</h1>
          
          <div className="Cards">
-            <Card titulo="#12 - Desafio do Contador" color="">
+            <Card titulo="#13 - Desafio da Mega Sena" color="#90F7EC">
+               <Mega qtde={6}/>
+            </Card>
+            
+            <Card titulo="#12 - Desafio do Contador" color="#F55555">
                <Contador />
             </Card>
             
